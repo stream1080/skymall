@@ -11,9 +11,12 @@
     <modules>
         <module>skymall-ware</module>
         <module>skymall-product</module>
-        <module>skylike-coupon</module>
+        <module>skymall-coupon</module>
         <module>skymall-order</module>
         <module>skymall-member</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>skymall-common</module>
     </modules>
 
 </project>
