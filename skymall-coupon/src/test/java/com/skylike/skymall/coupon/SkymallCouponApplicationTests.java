@@ -1,10 +1,10 @@
-package com.skylike.skylike.coupon;
+package com.skylike.skymall.coupon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SkylikeCouponApplicationTests {
+class SkymallCouponApplicationTests {
 
     @Test
     void contextLoads() {
