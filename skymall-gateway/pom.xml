@@ -9,44 +9,24 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.skylike</groupId>
-    <artifactId>skymall-coupon</artifactId>
+    <artifactId>skymall-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>skymall-coupon</name>
-    <description>天空商城-优惠服务</description>
+    <name>skymall-gateway</name>
+    <description>API网关</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>2020.0.2</spring-cloud.version>
     </properties>
     <dependencies>
-<!--        引用公共依赖-->
-        <dependency>
-            <groupId>com.skylike</groupId>
-            <artifactId>skymall-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-
-        </dependency>
-        <dependency>
-            <groupId>com.skylike</groupId>
-            <artifactId>skymall-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
