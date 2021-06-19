@@ -1,9 +1,10 @@
 package com.skylike.skymall.product.service.impl;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -15,6 +16,7 @@ import com.skylike.common.utils.Query;
 import com.skylike.skymall.product.dao.CategoryDao;
 import com.skylike.skymall.product.entity.CategoryEntity;
 import com.skylike.skymall.product.service.CategoryService;
+import org.springframework.util.StringUtils;
 
 
 @Service("categoryService")
@@ -22,7 +24,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
     private CategoryEntity categoryEntity;
 
-    //TODO 三级分类功能，未完成，空指针异常
+
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         IPage<CategoryEntity> page = this.page(
@@ -33,6 +35,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return new PageUtils(page);
     }
 
+
+//    //TODO 三级分类功能，未完成，空指针异常
     @Override
     public List<CategoryEntity> listWithTress() {
         //1.查出所有的分类
