@@ -19,7 +19,7 @@ mybatis-plus:
     db-config:
       id-type: auto
 server:
-  port: 10001
+  port: 10000
 
 spring:
   cloud:
